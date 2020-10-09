@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ember xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="ember.xsd">
+	<nev>Molnárfi</nev>
+	<fizetes>300000</fizetes>
+	<nev1>Brendon</nev1>
+</ember>

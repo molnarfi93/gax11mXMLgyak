@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/nevjegykartya" xmlns:tns="http://www.example.org/nevjegykartya" elementFormDefault="qualified">
+
+<xs:element name="nevjegykartyak">
+    <xs:complexType>
+    <xs:all>
+		<xs:element name="nevjegykartya">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element name="ceg">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="cim">
+									<xs:complexType>
+										<xs:attribute name="iranyitoszam" type="xs:int" use="required"/>
+										<xs:attribute name="varos" type="xs:string" use="required"/>
+										<xs:attribute name="utca" type="xs:string" use="required"/>
+										<xs:attribute name="hazszam" type="xs:int" use="required"/>
+									</xs:complexType>
+								</xs:element>		
+								<xs:element name="telefon">
+									<xs:complexType mixed="true">
+										<xs:attribute name="korzet" type="xs:int" use="required"/>
+									</xs:complexType>
+								</xs:element>	
+							</xs:sequence>
+							<xs:attribute name="nev" type="xs:string" use="required"/>
+							<xs:attribute name="weblap" type="xs:string" use="optional"/>	
+						</xs:complexType>
+					</xs:element>	
+					<xs:element name="telefonszam">
+						<xs:complexType mixed="true">
+							<xs:attribute name="korzet" type="xs:int" use="required"/>	
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>		
+				<xs:attribute name="id" type="xs:int" use="required"/>
+				<xs:attribute name="nev" type="xs:string" use="required"/>
+				<xs:attribute name="beosztas" type="xs:string" use="optional" default="alkalmazott"/>
+				<xs:attribute name="email" type="xs:string" use="optional"/>	
+			</xs:complexType>
+			<xs:key name="id">
+				<xs:selector xpath="nevjegykartya"/>
+				<xs:field xpath="@id"/>
+			</xs:key>
+			<xs:key name="korzet_key">
+				<xs:selector xpath="telefonszam"/>
+				<xs:field xpath="@korzet"/>
+			</xs:key>
+			<xs:keyref refer="tns:korzet_key" name="korzet_keyref">
+				<xs:selector xpath="telefon"/>
+				<xs:field xpath="@korzet"/>
+			</xs:keyref>
+		</xs:element>
+	</xs:all>	
+	</xs:complexType>
+</xs:element>			
+
+</xs:schema>

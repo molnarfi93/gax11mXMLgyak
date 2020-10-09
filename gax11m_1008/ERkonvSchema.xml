@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ER xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="ERkonvSchema.xsd">
+	<entitas kulcs="A">
+		<osszetett_tulajdonsag egyik="x" masik="y"></osszetett_tulajdonsag>
+		<masik_osszetett_tulajdonsag egyik="valami" masik="akarmi"></masik_osszetett_tulajdonsag>
+	</entitas>
+	<entitas kulcs="B" idegen_kulcs="C">
+		<osszetett_tulajdonsag egyik="x" masik="y"></osszetett_tulajdonsag>
+	</entitas>
+	<entitas kulcs="C" egyszeru_tulajdonsag=""></entitas>
+	<entitas idegen_kulcs="A" masik_idegen_kulcs="B" egyszeru_tulajdonsag=""></entitas>
+</ER>

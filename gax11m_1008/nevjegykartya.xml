@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<nevjegykartyak xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="nevjegykartya.xsd">
+	<nevjegykartya id="729786SA" nev="Molnárfi Brendon" beosztas="programozó" email="molnarfi93@gmail.com">
+		<ceg nev="BAY" weblap="bay.hu">
+			<cim iranyitoszam="3519" varos="Miskolc" utca="Iglói" hazszam="1"></cim>
+			<telefon korzet="46">666666</telefon>
+		</ceg>
+		<telefonszam korzet="52">382038</telefonszam> 
+	</nevjegykartya>
+</nevjegykartyak>

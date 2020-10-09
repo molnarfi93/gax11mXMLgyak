@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/ERkonvSchema" xmlns:tns="http://www.example.org/ERkonvSchema" elementFormDefault="qualified">
+
+<xs:element name="A">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="b">
+				<xs:complexType>
+					<xs:attribute name="x"/>
+					<xs:attribute name="y"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="c">
+				<xs:complexType>
+					<xs:attribute name="valami"/>
+					<xs:attribute name="akarmi"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="a"/>
+	</xs:complexType>
+	<xs:key name="key_A">
+		<xs:selector xpath="A"/>
+		<xs:field xpath="@a"/>
+	</xs:key>
+</xs:element>
+
+<xs:element name="B">
+	<xs:complexType>
+		<xs:all>
+			<xs:element name="b">
+				<xs:complexType>
+					<xs:attribute name="x"/>
+					<xs:attribute name="y"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:all>
+		<xs:attribute name="a"/>
+		<xs:attribute name="keyref_C"/>
+	</xs:complexType>
+	<xs:key name="key_B">
+		<xs:selector xpath="B"/>
+		<xs:field xpath="@a"/>
+	</xs:key>
+	<xs:keyref refer="tns:key_C" name="keyref_C">
+		<xs:selector xpath="B"/>
+		<xs:field xpath="@keyref_C"/>
+	</xs:keyref>
+</xs:element>
+
+<xs:element name="C">
+	<xs:complexType>
+		<xs:attribute name="a"/>
+		<xs:attribute name="b"/>
+	</xs:complexType>
+	<xs:key name="key_C">
+		<xs:selector xpath="C"/>
+		<xs:field xpath="@a"/>
+	</xs:key>
+</xs:element>
+
+<xs:element name="kapcsolo">
+	<xs:complexType>
+		<xs:attribute name="key_A"/>
+		<xs:attribute name="key_B"/>
+		<xs:attribute name="c"/>
+	</xs:complexType>
+	<xs:keyref refer="tns:key_A" name="keyref_A">
+		<xs:selector xpath="kapcsolo"/>
+		<xs:field xpath="@key_A"/>
+	</xs:keyref>
+	<xs:keyref refer="tns:key_B" name="keyref_B">
+		<xs:selector xpath="kapcsolo"/>
+		<xs:field xpath="@key_B"/>
+	</xs:keyref>
+</xs:element>
+
+</xs:schema>
