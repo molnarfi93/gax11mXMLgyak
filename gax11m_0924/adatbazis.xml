@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE adatbazis [
+	<!ELEMENT adatbazis (dolgozo)>
+		<!ELEMENT dolgozo (#PCDATA)>
+			<!ATTLIST dolgozo kod_int3 ID #REQUIRED>
+			<!ATTLIST dolgozo nev_char20 CDATA #REQUIRED>
+			<!ATTLIST dolgozo fizetes_int8 CDATA #IMPLIED>
+]>
+
+<adatbazis>
+	<dolgozo kod_int3="dolgozo0" nev_char20="Molnárfi" fizetes_int8="300000">
+	</dolgozo>
+</adatbazis>

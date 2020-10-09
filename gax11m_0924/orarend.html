@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Language" content="hu" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Gyakorlat2</title>
+</head>
+
+<body>
+
+<table id="orarend"></table>
+
+<script>
+
+function loadXMLDoc() {
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      myFunction(this);
+    }
+  };
+  xmlhttp.open("GET", "molnarfibrendon_orarend.xml", true);
+  xmlhttp.send();
+}
+
+function myFunction(xml) {
+  var i;
+  var xmlDoc = xml.responseXML;
+  var table="<tr><th>Targy</th><th>Idopont</th><th>Helyszin</th><th>Oktato</th></tr>";
+  var x = xmlDoc.getElementsByTagName("ora");
+  for (i = 0; i <x.length; i++) {
+    table += "<tr><td>" +
+    x[i].getElementsByTagName("targy")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("idopont")[0].childNodes[0].nodeValue +
+    "</td></tr>";
+    x[i].getElementsByTagName("helyszin")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("oktato")[0].childNodes[0].nodeValue +
+    "</td></tr>";
+  }
+  document.getElementById("orarend").innerHTML = table;
+}
+
+</script>
+
+</body>
+
+</html>

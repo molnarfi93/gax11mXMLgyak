@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<iskola kod="001">
+	<tanarok>
+		<tanar kod="0">
+			<nev>Bednarik</nev>
+	    	<szak>XML</szak>
+	    	<szak>Oprendszerek</szak>
+		</tanar>
+		<tanar kod="1">
+			<nev>Szücs</nev>
+			<szak>Szofttech</szak>
+			<szak>Adatbázisok</szak>
+		</tanar>
+	</tanarok>	
+	<tantargy kod="0" oktato="0">
+		<nev>XML</nev>
+		<osztaly>programtervezö</osztaly>
+	</tantargy>
+</iskola>

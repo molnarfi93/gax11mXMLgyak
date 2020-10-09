@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE iskola SYSTEM molnarfibrendon_tanartantargy.xml>
+
+<!ELEMENT iskola (tanar, tantargy)>
+	<!ELEMENT tanarok (tanar+)>
+		<!ELEMENT tanar (nev, szak)>
+			<!ATTLIST tanar kod ID #REQUIRED>
+			<!ELEMENT nev (#PCDATA)>
+			<!ELEMENT szak (XML | Oprendszerek | Szofttech | Adatbázisok)+>
+	<!ELEMENT tantargy (nev, osztaly)>
+		<!ATTLIST tantargy kod ID #REQUIRED>
+		<!ATTLIST tantargy oktato IDREF #REQUIRED>
+		<!ELEMENT nev (#PCDATA)>
+		<!ELEMENT osztaly (#PCDATA)>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE orarend SYSTEM molnarfibrendon_orarend.xml>
+	
+<!ELEMENT orarend (ora)>
+	<!ELEMENT ora (targy, idopont, helyszin, oktato, szak)>
+		<!ATTLIST ora id ID #REQUIRED>
+		<!ATTLIST ora tipus CDATA #REQUIRED>
+		<!ELEMENT targy (#PCDATA)>
+		<!ELEMENT idopont>
+			<!ATTLIST idopont nap IDREF #REQUIRED>
+			<!ATTLIST idopont tol IDREF #REQUIRED>
+			<!ATTLIST idopont ig IDREF #IMPLIED> 
+		<!ELEMENT helyszin (#PCDATA)>
+		<!ELEMENT oktato (#PCDATA)>
+		<!ELEMENT szak (#PCDATA)>
