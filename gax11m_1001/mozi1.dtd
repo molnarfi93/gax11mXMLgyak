@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE orarend SYSTEM mozi1.xml>
+
+<!ELEMENT mozi (film)>
+	<!ELEMENT film (targy, idopont, helyszin, oktato, szak)>
+		<!ATTLIST film id ID #REQUIRED>
+		<!ATTLIST film mufaj (horror | scifi | dráma | akció | vígjáték)+ #REQUIRED>
+		<!ELEMENT rendezo (#PCDATA)>
+			<!ATTLIST rendezo id IDREF #REQUIRED>
+			<!ATTLIST rendezo nev #REQUIRED>
+		<!ELEMENT szinesz (#PCDATA)>
+			<!ATTLIST szinesz id IDREF #REQUIRED>
+			<!ATTLIST szinesz nev #REQUIRED> 
+		<!ELEMENT iro (#PCDATA)>
+			<!ATTLIST iro id IDREF #REQUIRED>

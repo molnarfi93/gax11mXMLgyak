@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/molnarfibrendon_orarend" xmlns:tns="http://www.example.org/molnarfibrendon_orarend" elementFormDefault="qualified">
+
+<element name="orarend">
+    <complexType>		
+		<element name="ora" type="ora">
+			<complexType name="ora">
+				<sequence>
+					<element name="targy" type="string"/>
+					<element name="idopont" type="idopontType">
+						<complexType name="idopontType">
+							<attribute name="nap" type="string" use="required"/>
+							<attribute name="tol" type="int" use="required"/>
+							<attribute name="ig" type="int" use="optional"/>	
+						</complexType>
+					</element>	
+					<element name="helyszin" type="string"/>
+					<element name="oktato" type="string"/>
+					<element name="szak" type="string"/>	
+				</sequence>
+				<attribute name="id" type="int" use="required"/>
+				<attribute name="tipus" type="oraType" use="required"/>
+					<simpleType name="oraType">
+						<restriction base="string">
+							<enumeration value="eloadas"/>
+							<enumeration value="gyakorlat"/>
+							<enumeration value="konzultacio"/>
+						</restriction>
+					</simpleType>		
+			</complexType>
+			<key name="id">
+				<selector xpath="ora"/>
+				<field xpath="@id"/>
+			</key>
+			<keyref refer="nap" name="nap">
+				<selector xpath="masikfajl.xsd/nap"/>
+				<field xpath="@id"/>
+			</keyref>
+			<keyref refer="tol" name="tol">
+				<selector xpath="masikfajl.xsd/idopont"/>
+				<field xpath="@id"/>
+			</keyref>
+			<keyref refer="ig" name="ig">
+				<selector xpath="masikfajl.xsd/idopont"/>
+				<field xpath="@id"/>
+			</keyref>
+		</element>	
+	</complexType>
+</element>			
+
+</schema>
