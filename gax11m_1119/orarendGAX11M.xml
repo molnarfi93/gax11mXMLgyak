@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type=”txt/xsl” href=”orarendGAX11M.xsl” ?>
+<orarend>
+	<ora id="1" tipus="konzultáció">
+		<targy>szakdolgozatkészítés</targy>
+		<idopont nap="hétfö" tol="12" ig="13"></idopont> 
+		<helyszin>A4/310</helyszin>
+		<oktato>Piller</oktato>
+		<szak>programtervezö</szak>
+	</ora>
+	<ora id="2" tipus="elmélet">
+		<targy>XML</targy>
+		<idopont nap="kedd" tol="12" ig="14"></idopont> 
+		<helyszin>XXXVII</helyszin>
+		<oktato>Bednarik</oktato>
+		<szak>programtervezö</szak>
+	</ora>
+	<ora id="3" tipus="elmélet">
+		<targy>VIR</targy>
+		<idopont nap="szerda" tol="16" ig="18"></idopont> 
+		<helyszin>info202</helyszin>
+		<oktato>Sasvári</oktato>
+		<szak>programtervezö</szak>
+	</ora>
+	<ora id="4" tipus="gyakorlat">
+		<targy>XML</targy>
+		<idopont nap="csütörtök" tol="12" ig="14"></idopont> 
+		<helyszin>info103</helyszin>
+		<oktato>Bednarik</oktato>
+		<szak>programtervezö</szak>
+	</ora>
+</orarend>
