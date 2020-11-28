@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/adatbazis" xmlns:tns="http://www.example.org/adatbazis" elementFormDefault="qualified">
+<xs:element name="adatbazis">
+<xs:complexType>
+<xs:all>
+
+<xs:element name="macska">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="nev" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="fajta" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="szul_adatok" minOccurs="0" maxOccurs="1">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="szuletesnap" type="xs:date" minOccurs="1" maxOccurs="1"/>
+					</xs:sequence>
+					<xs:attribute name="szul_hely"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="eletkor" type="xs:int" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="nem" type="xs:string" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>	
+		<xs:attribute name="gazda"/>
+	</xs:complexType>
+	<xs:keyref refer="tns:key_ember" name="keyref_ember">
+		<xs:selector xpath="macska"/>
+		<xs:field xpath="@gazda"/>
+	</xs:keyref>
+</xs:element>
+
+<xs:element name="ember">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="nev" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="szul_adatok" minOccurs="1" maxOccurs="1">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="szuletesnap" type="xs:date" minOccurs="1" maxOccurs="1"/>
+					</xs:sequence>
+					<xs:attribute name="szul_hely"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="eletkor" type="xs:int" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="lakhely" minOccurs="1" maxOccurs="1">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="ut_hazszam" type="xs:date" minOccurs="1" maxOccurs="1"/>
+					</xs:sequence>
+					<xs:attribute name="varos"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>	
+		<xs:attribute name="szig_szam"/>
+	</xs:complexType>
+	<xs:key name="key_ember">
+		<xs:selector xpath="ember"/>
+		<xs:field xpath="@szig_szam"/>
+	</xs:key>
+	<xs:keyref refer="tns:key_varos" name="keyref_szul_varos">
+		<xs:selector xpath="ember"/>
+		<xs:field xpath="@szul_hely"/>
+	</xs:keyref>
+	<xs:keyref refer="tns:key_varos" name="keyref_lakhely_varos">
+		<xs:selector xpath="ember"/>
+		<xs:field xpath="@varos"/>
+	</xs:keyref>
+</xs:element>
+
+<xs:element name="varos">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="nev" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="nepesseg" type="xs:int" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="terulet" type="xs:int" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+		<xs:attribute name="iranyitoszam"/>
+		<xs:attribute name="orszag"/>
+	</xs:complexType>
+	<xs:key name="key_varos">
+		<xs:selector xpath="varos"/>
+		<xs:field xpath="@iranyitoszam"/>
+	</xs:key>
+	<xs:keyref refer="tns:key_orszag" name="keyref_orszag">
+		<xs:selector xpath="varos"/>
+		<xs:field xpath="@orszag"/>
+	</xs:keyref>
+</xs:element>
+
+<xs:element name="orszag">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="nepesseg" type="xs:int" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="terulet" type="xs:int" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="valuta" type="xs:string" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+		<xs:attribute name="nev"/>
+		<xs:attribute name="fovaros"/>
+		<xs:attribute name="legn_varos"/>
+	</xs:complexType>
+	<xs:key name="key_orszag">
+		<xs:selector xpath="orszag"/>
+		<xs:field xpath="@nev"/>
+	</xs:key>
+	<xs:keyref refer="tns:key_varos" name="keyref_fovaros">
+		<xs:selector xpath="orszag"/>
+		<xs:field xpath="@fovaros"/>
+	</xs:keyref>
+	<xs:keyref refer="tns:key_varos" name="keyref_legn_varos">
+		<xs:selector xpath="orszag"/>
+		<xs:field xpath="@legn_varos"/>
+	</xs:keyref>
+</xs:element>
+
+<xs:element name="testvervarosok">
+	<xs:complexType>
+		<xs:attribute name="iszam1"/>
+		<xs:attribute name="iszam2"/>
+	</xs:complexType>
+	<xs:keyref refer="tns:key_varos" name="keyref_egyik_varos">
+		<xs:selector xpath="testvervarosok"/>
+		<xs:field xpath="@iszam1"/>
+	</xs:keyref>
+	<xs:keyref refer="tns:key_varos" name="keyref_masik_varos">
+		<xs:selector xpath="testvervarosok"/>
+		<xs:field xpath="@iszam2"/>
+	</xs:keyref>
+</xs:element>
+
+</xs:all>
+</xs:complexType>
+</xs:element>
+</xs:schema>

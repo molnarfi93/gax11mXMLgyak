@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<adatbazis xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="adatbazis.xsd"> 
+	<macska gazda="729186SA">
+		<nev>Mázli néni</nev>
+		<fajta>brit cirmos</fajta>
+		<szul_adatok szul_hely="4000">
+			<szuletesnap>08/23/2003</szuletesnap>
+		</szul_adatok>
+		<eletkor></eletkor>
+		<nem>nőstény</nem>
+	</macska>
+	<macska gazda="999998SA">
+		<nev>Rötyi</nev>
+		<fajta>brit cirmos</fajta>
+		<szul_adatok szul_hely="4000">
+			<szuletesnap>05/21/2011</szuletesnap>
+		</szul_adatok>
+		<eletkor></eletkor>
+		<nem>kandúr</nem>
+	</macska>
+	<macska gazda="999986SA">
+		<nev>Lucifer</nev>
+		<fajta>hócipős</fajta>
+		<szul_adatok szul_hely="9992">
+			<szuletesnap>06/06/2006</szuletesnap>
+		</szul_adatok>
+		<eletkor></eletkor>
+		<nem>nőstény</nem>
+	</macska>
+	<macska gazda="999997SA">
+		<nev>Szivárvány</nev>
+		<fajta>keverék</fajta>
+		<szul_adatok szul_hely="4080">
+			<szuletesnap></szuletesnap>
+		</szul_adatok>
+		<eletkor></eletkor>
+		<nem>kandúr</nem>
+	</macska>
+	<macska gazda="999995SA">
+		<nev>Mandarin</nev>
+		<fajta>abesszin</fajta>
+		<szul_adatok szul_hely="4000">
+			<szuletesnap>03/07/2012</szuletesnap>
+		</szul_adatok>
+		<eletkor></eletkor>
+		<nem>kandúr</nem>
+	</macska>
+	<macska gazda="999994SA">
+		<nev>Cicus</nev>
+		<fajta>cirmos</fajta>
+		<szul_adatok szul_hely="4087">
+			<szuletesnap></szuletesnap>
+		</szul_adatok>
+		<eletkor></eletkor>
+		<nem>kandúr</nem>
+	</macska>
+	<ember szig_szam="729186SA">
+		<nev>Molnárfi Brendon</nev>
+		<szul_adatok szul_hely="4000">
+			<szuletesnap>12/23/1993</szuletesnap>
+		</szul_adatok>
+		<eletkor></eletkor>
+		<lakhely varos="3519">
+			<ut_hazszam>Bencések útja 18.</ut_hazszam>
+		</lakhely>
+	</ember>
+	<ember szig_szam="999999SA">
+		<nev>Molnárfi Sándor</nev>
+		<szul_adatok szul_hely="4000">
+			<szuletesnap>03/13/1961</szuletesnap>
+		</szul_adatok>
+		<eletkor></eletkor>
+		<lakhely varos="4080">
+			<ut_hazszam>Tiszavasvári út 8.</ut_hazszam>
+		</lakhely>
+	</ember>
+	<ember szig_szam="999998SA">
+		<nev>Molnárfiné Havasi Marianna</nev>
+		<szul_adatok szul_hely="4080">
+			<szuletesnap>06/16/1957</szuletesnap>
+		</szul_adatok>
+		<eletkor></eletkor>
+		<lakhely varos="4080">
+			<ut_hazszam>Tiszavasvári út 8.</ut_hazszam>
+		</lakhely>
+	</ember>
+	<ember szig_szam="999997SA">
+		<nev>Molnárfi Krisztián</nev>
+		<szul_adatok szul_hely="4080">
+			<szuletesnap>02/12/1979</szuletesnap>
+		</szul_adatok>
+		<eletkor></eletkor>
+		<lakhely varos="4080">
+			<ut_hazszam>Kinizsi u. 1.</ut_hazszam>
+		</lakhely>
+	</ember>
+	<ember szig_szam="999996SA">
+		<nev>Balogh Anikó</nev>
+		<szul_adatok szul_hely="4000">
+			<szuletesnap>07/17/1987</szuletesnap>
+		</szul_adatok>
+		<eletkor></eletkor>
+		<lakhely varos="1011">
+			<ut_hazszam>Hűvösvölgyi út 21.</ut_hazszam>
+		</lakhely>
+	</ember>
+	<ember szig_szam="999995SA">
+		<nev>Balogh Gábor</nev>
+		<szul_adatok szul_hely="4000">
+			<szuletesnap>09/14/1957</szuletesnap>
+		</szul_adatok>
+		<eletkor></eletkor>
+		<lakhely varos="4000">
+			<ut_hazszam>Esze Tamás út 34.</ut_hazszam>
+		</lakhely>
+	</ember>
+	<ember szig_szam="999994SA">
+		<nev>Incze László</nev>
+		<szul_adatok szul_hely="4080">
+			<szuletesnap>01/30/1994</szuletesnap>
+		</szul_adatok>
+		<eletkor></eletkor>
+		<lakhely varos="4087">
+			<ut_hazszam>Könyök utca 5.</ut_hazszam>
+		</lakhely>
+	</ember>
+	<ember szig_szam="999993SA">
+		<nev>Joakim Cans</nev>
+		<szul_adatok szul_hely="9994">
+			<szuletesnap>02/19/1970</szuletesnap>
+		</szul_adatok>
+		<eletkor></eletkor>
+		<lakhely varos="9994">
+			<ut_hazszam>Gata Armbage 5.</ut_hazszam>
+		</lakhely>
+	</ember>
+	<ember szig_szam="999992SA">
+		<nev>Joakim Broden</nev>
+		<szul_adatok szul_hely="9993">
+			<szuletesnap>10/05/1980</szuletesnap>
+		</szul_adatok>
+		<eletkor></eletkor>
+		<lakhely varos="9993">
+			<ut_hazszam>Gata Dal 29.</ut_hazszam>
+		</lakhely>
+	</ember>
+	<ember szig_szam="999991SA">
+		<nev>Pontus Norgren</nev>
+		<szul_adatok szul_hely="9994">
+			<szuletesnap>04/22/1968</szuletesnap>
+		</szul_adatok>
+		<eletkor></eletkor>
+		<lakhely varos="9993">
+			<ut_hazszam>Gata Hammare 38.</ut_hazszam>
+		</lakhely>
+	</ember>
+	<ember szig_szam="999990SA">
+		<nev>Steve Bannon</nev>
+		<szul_adatok szul_hely="9995">
+			<szuletesnap>03/28/1975</szuletesnap>
+		</szul_adatok>
+		<eletkor></eletkor>
+		<lakhely varos="9995">
+			<ut_hazszam>Fleet Street 76.</ut_hazszam>
+		</lakhely>
+	</ember>
+	<ember szig_szam="999989SA">
+		<nev>Sweeney Todd</nev>
+		<szul_adatok szul_hely="9995">
+			<szuletesnap>08/19/1970</szuletesnap>
+		</szul_adatok>
+		<eletkor></eletkor>
+		<lakhely varos="9995">
+			<ut_hazszam>Fleet Street 48.</ut_hazszam>
+		</lakhely>
+	</ember>
+	<ember szig_szam="999988SA">
+		<nev>Rebecca Aitken</nev>
+		<szul_adatok szul_hely="9997">
+			<szuletesnap>12/12/1991</szuletesnap>
+		</szul_adatok>
+		<eletkor></eletkor>
+		<lakhely varos="9997">
+			<ut_hazszam>Easter Road 67.</ut_hazszam>
+		</lakhely>
+	</ember>
+	<ember szig_szam="999987SA">
+		<nev>Mattia Chiavari</nev>
+		<szul_adatok szul_hely="9999">
+			<szuletesnap>02/25/1985</szuletesnap>
+		</szul_adatok>
+		<eletkor></eletkor>
+		<lakhely varos="9998">
+			<ut_hazszam>Via Fiumicino 90.</ut_hazszam>
+		</lakhely>
+	</ember>
+	<ember szig_szam="999986SA">
+		<nev>Justin Hellman</nev>
+		<szul_adatok szul_hely="9992">
+			<szuletesnap>06/06/1966</szuletesnap>
+		</szul_adatok>
+		<eletkor></eletkor>
+		<lakhely varos="9992">
+			<ut_hazszam>Hell Road 666.</ut_hazszam>
+		</lakhely>
+	</ember>
+	<varos iranyitoszam="4080" orszag="Magyarország">
+		<nev>Hajdúnánás</nev>
+		<nepesseg>17000</nepesseg>
+		<terulet>260</terulet>
+	</varos>
+	<varos iranyitoszam="4087" orszag="Magyarország">
+		<nev>Hajdúdorog</nev>
+		<nepesseg>9000</nepesseg>
+		<terulet>101</terulet>
+	</varos>
+	<varos iranyitoszam="4000" orszag="Magyarország">
+		<nev>Debrecen</nev>
+		<nepesseg>202000</nepesseg>
+		<terulet>462</terulet>
+	</varos>
+	<varos iranyitoszam="3519" orszag="Magyarország">
+		<nev>Miskolc</nev>
+		<nepesseg>155000</nepesseg>
+		<terulet>237</terulet>
+	</varos>
+	<varos iranyitoszam="1011" orszag="Magyarország">
+		<nev>Budapest</nev>
+		<nepesseg>1752000</nepesseg>
+		<terulet>525</terulet>
+	</varos>
+	<varos iranyitoszam="9999" orszag="Olaszország">
+		<nev>Milánó</nev>
+		<nepesseg>1352000</nepesseg>
+		<terulet>182</terulet>
+	</varos>
+	<varos iranyitoszam="9998" orszag="Olaszország">
+		<nev>Róma</nev>
+		<nepesseg>2873000</nepesseg>
+		<terulet>1285</terulet>
+	</varos>
+	<varos iranyitoszam="9997" orszag="Skócia">
+		<nev>Edinburgh</nev>
+		<nepesseg>513000</nepesseg>
+		<terulet>262</terulet>
+	</varos>
+	<varos iranyitoszam="9996" orszag="Skócia">
+		<nev>Glasgow</nev>
+		<nepesseg>626000</nepesseg>
+		<terulet>176</terulet>
+	</varos>
+	<varos iranyitoszam="9995" orszag="Anglia">
+		<nev>London</nev>
+		<nepesseg>8908000</nepesseg>
+		<terulet>1579</terulet>
+	</varos>
+	<varos iranyitoszam="9994" orszag="Svédország">
+		<nev>Göteborg</nev>
+		<nepesseg>592000</nepesseg>
+		<terulet>198</terulet>
+	</varos>
+	<varos iranyitoszam="9993" orszag="Svédország">
+		<nev>Stockholm</nev>
+		<nepesseg>1373000</nepesseg>
+		<terulet>382</terulet>
+	</varos>
+	<varos iranyitoszam="9992" orszag="USA">
+		<nev>Los Angeles</nev>
+		<nepesseg>3976000</nepesseg>
+		<terulet>1291</terulet>
+	</varos>
+	<varos iranyitoszam="9991" orszag="USA">
+		<nev>Washington</nev>
+		<nepesseg>672000</nepesseg>
+		<terulet>177</terulet>
+	</varos>
+	<orszag nev="Magyarország" fovaros="1011" legn_varos="1011">
+		<nepesseg>9972000</nepesseg>
+		<terulet>93000</terulet>
+		<valuta>forint</valuta>
+	</orszag>
+	<orszag nev="Olaszország" fovaros="9998" legn_varos="9998">
+		<nepesseg>60600000</nepesseg>
+		<terulet>301000</terulet>
+		<valuta>euro</valuta>
+	</orszag>
+	<orszag nev="Svédország" fovaros="9993" legn_varos="9993">
+		<nepesseg>10162000</nepesseg>
+		<terulet>450000</terulet>
+		<valuta>svéd korona</valuta>
+	</orszag>
+	<orszag nev="Skócia" fovaros="9997" legn_varos="9996">
+		<nepesseg>5405000</nepesseg>
+		<terulet>79000</terulet>
+		<valuta>font</valuta>
+	</orszag>
+	<orszag nev="Anglia" fovaros="9995" legn_varos="9995">
+		<nepesseg>53000000</nepesseg>
+		<terulet>130000</terulet>
+		<valuta>font</valuta>
+	</orszag>
+	<orszag nev="USA" fovaros="9991" legn_varos="9992">
+		<nepesseg>325146000</nepesseg>
+		<terulet>9827000</terulet>
+		<valuta>dollár</valuta>
+	</orszag>
+	<testvervarosok iszam1="1011" iszam2="9996"/>
+	<testvervarosok iszam1="1011" iszam2="9999"/>
+	<testvervarosok iszam1="4000" iszam2="9994"/>
+	<testvervarosok iszam1="9995" iszam2="9992"/>
+	<testvervarosok iszam1="9997" iszam2="9999"/>
+	<testvervarosok iszam1="9998" iszam2="9991"/>
+	<testvervarosok iszam1="9999" iszam2="9993"/>
+</adatbazis>	
