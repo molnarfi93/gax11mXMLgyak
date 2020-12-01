@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="txt/xsl" href="autokGAX11M.xsl"?>
+<?xml-stylesheet type="txt/xsl" href="autok1GAX11M.xsl"?>
+<?xml-stylesheet type="txt/xsl" href="autok2GAX11M.xsl"?>
+<?xml-stylesheet type="txt/xsl" href="autok3GAX11M.xsl"?>
+<?xml-stylesheet type="txt/xsl" href="autok4GAX11M.xsl"?>
+<?xml-stylesheet type="txt/xsl" href="autok5GAX11M.xsl"?>
+<?xml-stylesheet type="txt/xsl" href="autok6GAX11M.xsl"?>
+<?xml-stylesheet type="txt/xsl" href="autok7GAX11M.xsl"?>
+<autok>
+	<auto rsz="ABC-100">
+		<tipus>Fiat</tipus>
+		<ar>21233</ar>
+		<szin>piros</szin>
+		<tulaj>
+			<nev>Zoli</nev>
+			<varos>Eger</varos>
+		</tulaj>
+	</auto>
+	<auto rsz="ABC-101">
+		<tipus>Skoda</tipus>
+		<ar>44233</ar>
+		<szin>fehér</szin>
+		<tulaj>
+			<nev>Peti</nev>
+			<varos>Miskolc</varos>
+		</tulaj>
+	</auto>
+	<auto rsz="ABC-102">
+		<tipus>Opel</tipus>
+		<ar>31233</ar>
+		<szin>szürke</szin>
+		<tulaj>
+			<nev>Tomi</nev>
+			<varos>Miskolc</varos>
+		</tulaj>
+	</auto>
+	<auto rsz="ABC-103">
+		<tipus>Opel</tipus>
+		<ar>21233</ar>
+		<szin>kék</szin>
+		<tulaj>
+			<nev>Sanyi</nev>
+			<varos>Miskolc</varos>
+		</tulaj>
+	</auto>
+</autok>
